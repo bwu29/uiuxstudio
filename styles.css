@@ -5,16 +5,57 @@
 #siteLogo{
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    background-color: rgb(236, 193, 193);
+    flex-direction: column;
+  }
+  #logoBar{
+    width: 100%;
+    height: auto;
+    order: -1;
+  
+  }
+  #siteLogo{
+    width: 100%;
+  }  
+  
+}
 body {
   display: flex;
+  background-color: rgb(236, 193, 193);
+  
 }
 #staffGallery{
   width: 70vw;
-  display: inherit;
-
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
 }
 .galleryImage{
   width: 100%;
-  height: auto;
-  height: 300px;
+  height: auto; 
+  
+}
+h1{
+  color: darkblue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(36px, 4vw, 72px);
+
+}
+h3{
+  color: rgb(7, 158, 55);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(36px, 2vw, 72px);
+}
+.card {
+  border-radius: 5px;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 200px;
+  height: 350px;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
